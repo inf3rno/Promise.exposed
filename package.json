@@ -1,0 +1,28 @@
+{
+  "name": "@inf3rno/promise.exposed",
+  "version": "1.0.1",
+  "description": "Resolving or rejecting Javascript Promise from outside.",
+  "keywords": [
+    "Promise",
+    "outside",
+    "resolve"
+  ],
+  "license": "MIT",
+  "author": "László Lajos Jánszky",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/inf3rno/Promise.exposed"
+  },
+  "bugs": {
+    "url": "https://github.com/inf3rno/Promise.exposed/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {}
+}
