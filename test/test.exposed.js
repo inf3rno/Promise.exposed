@@ -257,6 +257,24 @@ describe("exposed", function () {
                 done();
             }, 3);
         });
+
+        describe("the reject and resolve methods", function (){
+
+            it("should return the created Promise when it is called directly", function (){
+                const promise = exposed();
+                expect(promise.resolve()).to.equal(promise);
+                expect(promise.reject()).to.equal(promise);
+            });
+
+            it("should return a sub-promise when it is called indirectly by using for example then", function (){
+                const promise = exposed();
+                const subPromise = promise.then(function (){});
+                expect(subPromise).to.not.equal(promise);
+                expect(subPromise.resolve()).to.equal(subPromise);
+                expect(subPromise.reject()).to.equal(subPromise);
+            });
+
+        });
     });
 
 });
