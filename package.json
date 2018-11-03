@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/inf3rno/Promise.exposed/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha"
